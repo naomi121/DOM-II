@@ -62,3 +62,28 @@ funLogo.addEventListener('click', function(e) {
   console.log('bus click');
 
 })
+
+
+const navbar = document.querySelectorAll('a.nav-link');
+navbar.forEach(link => {
+    link.addEventListener("mouseenter", e => {
+        e.target.style.color = "purple";
+    });
+    link.addEventListener("mouseleave", e => {
+        e.target.style.color = "Orange";
+    });
+});
+
+
+
+const adventureAwaits = document.querySelector('.inverse-content .text-content');
+adventureAwaits.addEventListener('wheel', function () {
+    adventureAwaits.style.display = 'flex';
+});
+
+const stopLink = document.querySelector(".nav-link");
+
+stopLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log("stopped the link")
+})
