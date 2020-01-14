@@ -14,4 +14,15 @@ busImage.addEventListener("mouseleave", () => {
     busImage.style.transform = "scale(1)"
   });
 
-  
+   //double click
+//const card = document.querySelector('.img-content');
+
+//card.addEventListener('dblclick', function (e) {
+  //card.classList.toggle('large');
+//});
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', event => {
+  btn.innerHTML = `Click count: ${event.detail}`;
+});
